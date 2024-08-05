@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/simulation/modelsim
+vadder_8bit
+Z1 !s110 1722885378
+!i10b 1
+!s100 XKUPmfZA=W0?869YDVk]N2
+I=oAg=hMN?<cH[8O8iK42S1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1722748618
+Z4 8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit.v
+Z5 FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit.v
+L0 2
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1722885378.000000
+Z8 !s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work {+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder}
+Z12 tCvgOpt 0
+vadder_8bit_tb
+R1
+!i10b 1
+!s100 VbUBzYdJ7O;gFkU^gPlQX0
+Ib2DeWjGRe3gobo[OJ_O0<1
+R2
+R0
+w1722885353
+8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit_tb.v
+FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit adder/adder_8bit_tb.v|
+!i113 1
+R10
+R11
+R12
+vfull_adder
+R1
+!i10b 1
+!s100 <7ZU:gW7zazgMlO:cCT3o2
+If8zAmajlzFNXgYZ@VF`=G1
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vhalf_adder
+R1
+!i10b 1
+!s100 0a[]^]8=Nl?laVb=I7[ba2
+IBXOkQ[CbSe:7T@[NECE>M3
+R2
+R0
+R3
+R4
+R5
+L0 22
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

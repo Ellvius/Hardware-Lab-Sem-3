@@ -1,0 +1,234 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/simulation/modelsim
+vadder_8bit
+Z1 !s110 1722884311
+!i10b 1
+!s100 f1`JkWjDhMjHS8Y8O1ogn1
+Izl4eCLj^:jCDg7U090ICj0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1722879517
+Z4 8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v
+Z5 FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v
+L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1722884311.000000
+Z8 !s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work {+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU}
+Z12 tCvgOpt 0
+vALU_8bit
+R1
+!i10b 1
+!s100 b]3EUQ0a1U9NcWBc7i2Uj2
+IiBT^SHe?Qiz;7Siz]=;mW2
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@a@l@u_8bit
+vALU_8bit_tb
+R1
+!i10b 1
+!s100 PRj86f>KKBBSIel^oP86i1
+IUgHl4CdMW_N=B6gEifQn_0
+R2
+R0
+w1722884261
+8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit_tb.v
+FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit_tb.v|
+!i113 1
+R10
+R11
+R12
+n@a@l@u_8bit_tb
+vbitwise_xor
+R1
+!i10b 1
+!s100 l[@MP7_U_VF6eI4@94ABm0
+IID;RnVn8c_;O8Q?S]UoSc2
+R2
+R0
+R3
+R4
+R5
+L0 83
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vfull_adder
+R1
+!i10b 1
+!s100 hL=HHYUTnCRZD]:jVC6@[0
+IMQUYRA[]W5BVikL3`mJJb0
+R2
+R0
+R3
+R4
+R5
+L0 158
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vhalf_adder
+R1
+!i10b 1
+!s100 W0N2VUPDEM];15eQW1;i;0
+Ia@zoY;FkaQ:;OR[Pibmae2
+R2
+R0
+R3
+R4
+R5
+L0 147
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vleft_shift
+R1
+!i10b 1
+!s100 ;TF0k4X9PnPGoLEI=XZJ;2
+IP8;oVOg_NQ1EM_3DFA20X3
+R2
+R0
+R3
+R4
+R5
+L0 101
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vMUX_2x1
+R1
+!i10b 1
+!s100 CUgMzc3Reh6]6F9KP38Ii2
+IO@JYhiQAHADRmfYlWC^9_0
+R2
+R0
+R3
+R4
+R5
+L0 119
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@m@u@x_2x1
+vMUX_4x1
+R1
+!i10b 1
+!s100 0nlG:aTD>Kji9=9P`o7=K2
+IB6UfT;?P[PJY:anBHa<3n1
+R2
+R0
+R3
+R4
+R5
+L0 133
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@m@u@x_4x1
+vsubtractor_8bit
+R1
+!i10b 1
+!s100 i:FA_baN@KD^<7@Z9SSj?2
+I[aZLaoNAL]8bl<D>dh:iF3
+R2
+R0
+R3
+R4
+R5
+L0 52
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
