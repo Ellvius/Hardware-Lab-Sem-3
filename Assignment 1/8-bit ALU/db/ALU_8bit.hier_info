@@ -15,8 +15,8 @@ b[4] => b[4].IN3
 b[5] => b[5].IN3
 b[6] => b[6].IN3
 b[7] => b[7].IN3
-op[0] => op[0].IN8
-op[1] => op[1].IN8
+op[0] => op[0].IN9
+op[1] => op[1].IN9
 res[0] << MUX_4x1:m1.port5
 res[1] << MUX_4x1:m2.port5
 res[2] << MUX_4x1:m3.port5
@@ -25,6 +25,7 @@ res[4] << MUX_4x1:m5.port5
 res[5] << MUX_4x1:m6.port5
 res[6] << MUX_4x1:m7.port5
 res[7] << MUX_4x1:m8.port5
+bc << MUX_4x1:cb.port5
 
 
 |ALU_8bit|adder_8bit:add
@@ -527,22 +528,22 @@ res[7] <= x8.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_8bit|left_shift:ls
-a[0] => b2.DATAIN
-a[1] => b3.DATAIN
-a[2] => b4.DATAIN
-a[3] => b5.DATAIN
-a[4] => b6.DATAIN
-a[5] => b7.DATAIN
-a[6] => b8.DATAIN
+a[0] => res[4].DATAIN
+a[1] => res[5].DATAIN
+a[2] => res[6].DATAIN
+a[3] => res[7].DATAIN
+a[4] => ~NO_FANOUT~
+a[5] => ~NO_FANOUT~
+a[6] => ~NO_FANOUT~
 a[7] => ~NO_FANOUT~
 res[0] <= <GND>
-res[1] <= b2.DB_MAX_OUTPUT_PORT_TYPE
-res[2] <= b3.DB_MAX_OUTPUT_PORT_TYPE
-res[3] <= b4.DB_MAX_OUTPUT_PORT_TYPE
-res[4] <= b5.DB_MAX_OUTPUT_PORT_TYPE
-res[5] <= b6.DB_MAX_OUTPUT_PORT_TYPE
-res[6] <= b7.DB_MAX_OUTPUT_PORT_TYPE
-res[7] <= b8.DB_MAX_OUTPUT_PORT_TYPE
+res[1] <= <GND>
+res[2] <= <GND>
+res[3] <= <GND>
+res[4] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+res[5] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+res[6] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+res[7] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_8bit|MUX_4x1:m1
@@ -810,6 +811,40 @@ res <= o.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_8bit|MUX_4x1:m8|MUX_2x1:m3
+a => a1.IN0
+b => a2.IN0
+s => a2.IN1
+s => a1.IN1
+res <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_8bit|MUX_4x1:cb
+a => a.IN1
+b => b.IN1
+c => c.IN1
+d => d.IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+res <= MUX_2x1:m3.port3
+
+
+|ALU_8bit|MUX_4x1:cb|MUX_2x1:m1
+a => a1.IN0
+b => a2.IN0
+s => a2.IN1
+s => a1.IN1
+res <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_8bit|MUX_4x1:cb|MUX_2x1:m2
+a => a1.IN0
+b => a2.IN0
+s => a2.IN1
+s => a1.IN1
+res <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_8bit|MUX_4x1:cb|MUX_2x1:m3
 a => a1.IN0
 b => a2.IN0
 s => a2.IN1

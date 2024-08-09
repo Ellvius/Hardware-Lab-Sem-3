@@ -1,5 +1,5 @@
 Flow report for ALU_8bit
-Tue Aug 06 00:27:53 2024
+Thu Aug 08 23:37:54 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Aug 06 00:27:53 2024       ;
+; Flow Status                        ; Successful - Thu Aug 08 23:37:54 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ALU_8bit                                    ;
 ; Top-level Entity Name              ; ALU_8bit                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 40                                          ;
-;     Total combinational functions  ; 40                                          ;
+; Total logic elements               ; 41                                          ;
+;     Total combinational functions  ; 41                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 26                                          ;
+; Total pins                         ; 27                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/06/2024 00:27:45 ;
+; Start date & time ; 08/08/2024 23:37:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU_8bit            ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 18648921254583.172288426519912         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 18648921254583.172314046525536         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; ALU_8bit_tb    ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ALU_8bit_tb                            ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -103,8 +103,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4778 MB             ; 00:00:06                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4777 MB             ; 00:00:06                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

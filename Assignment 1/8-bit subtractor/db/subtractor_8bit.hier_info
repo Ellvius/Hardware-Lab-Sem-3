@@ -15,15 +15,15 @@ b[4] => w[4].IN1
 b[5] => w[5].IN1
 b[6] => w[6].IN1
 b[7] => w[7].IN1
-dif[0] <= full_adder:f1.port3
-dif[1] <= full_adder:f2.port3
-dif[2] <= full_adder:f3.port3
-dif[3] <= full_adder:f4.port3
-dif[4] <= full_adder:f5.port3
-dif[5] <= full_adder:f6.port3
-dif[6] <= full_adder:f7.port3
-dif[7] <= full_adder:f8.port3
-borrow <= full_adder:f8.port4
+dif[0] << full_adder:f1.port3
+dif[1] << full_adder:f2.port3
+dif[2] << full_adder:f3.port3
+dif[3] << full_adder:f4.port3
+dif[4] << full_adder:f5.port3
+dif[5] << full_adder:f6.port3
+dif[6] << full_adder:f7.port3
+dif[7] << full_adder:f8.port3
+borrow << full_adder:f8.port4
 
 
 |subtractor_8bit|full_adder:f1

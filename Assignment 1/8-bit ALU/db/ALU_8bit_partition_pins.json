@@ -36,6 +36,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "bc",
+					"strict" : false
+				},
+				{
 					"name" : "a[0]",
 					"strict" : false
 				},

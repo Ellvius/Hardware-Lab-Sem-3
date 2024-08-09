@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU_8bit
-Tue Aug 06 00:27:53 2024
+Thu Aug 08 23:37:54 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,13 +15,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "subtractor_8bit:sub|full_adder:f1"
- 11. Port Connectivity Checks: "subtractor_8bit:sub"
+ 10. Port Connectivity Checks: "MUX_4x1:cb"
+ 11. Port Connectivity Checks: "subtractor_8bit:sub|full_adder:f1"
  12. Port Connectivity Checks: "adder_8bit:add|full_adder:f1"
- 13. Port Connectivity Checks: "adder_8bit:add"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -47,16 +46,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 06 00:27:53 2024       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 08 23:37:54 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ALU_8bit                                    ;
 ; Top-level Entity Name              ; ALU_8bit                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 40                                          ;
-;     Total combinational functions  ; 40                                          ;
+; Total logic elements               ; 41                                          ;
+;     Total combinational functions  ; 41                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 26                                          ;
+; Total pins                         ; 27                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -168,13 +167,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
-; ALU_8bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                 ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; ALU_8bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -182,30 +181,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 40          ;
+; Estimated Total logic elements              ; 41          ;
 ;                                             ;             ;
-; Total combinational functions               ; 40          ;
+; Total combinational functions               ; 41          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 26          ;
-;     -- 3 input functions                    ; 7           ;
-;     -- <=2 input functions                  ; 7           ;
+;     -- 4 input functions                    ; 27          ;
+;     -- 3 input functions                    ; 9           ;
+;     -- <=2 input functions                  ; 5           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 40          ;
+;     -- normal mode                          ; 41          ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
 ;     -- Dedicated logic registers            ; 0           ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 26          ;
+; I/O pins                                    ; 27          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; op[1]~input ;
-; Maximum fan-out                             ; 13          ;
-; Total fan-out                               ; 173         ;
-; Average fan-out                             ; 1.88        ;
+; Maximum fan-out                             ; 14          ;
+; Total fan-out                               ; 181         ;
+; Average fan-out                             ; 1.91        ;
 +---------------------------------------------+-------------+
 
 
@@ -214,13 +213,15 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                       ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------+-----------------+--------------+
-; |ALU_8bit                  ; 40 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 26   ; 0            ; 0          ; |ALU_8bit                                                 ; ALU_8bit        ; work         ;
+; |ALU_8bit                  ; 41 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 27   ; 0            ; 0          ; |ALU_8bit                                                 ; ALU_8bit        ; work         ;
+;    |MUX_4x1:cb|            ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:cb                                      ; MUX_4x1         ; work         ;
+;       |MUX_2x1:m3|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:cb|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
 ;    |MUX_4x1:m1|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m1                                      ; MUX_4x1         ; work         ;
 ;       |MUX_2x1:m3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m1|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
-;    |MUX_4x1:m2|            ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m2                                      ; MUX_4x1         ; work         ;
-;       |MUX_2x1:m3|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m2|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
-;    |MUX_4x1:m3|            ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m3                                      ; MUX_4x1         ; work         ;
-;       |MUX_2x1:m3|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m3|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
+;    |MUX_4x1:m2|            ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m2                                      ; MUX_4x1         ; work         ;
+;       |MUX_2x1:m3|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m2|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
+;    |MUX_4x1:m3|            ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m3                                      ; MUX_4x1         ; work         ;
+;       |MUX_2x1:m3|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m3|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
 ;    |MUX_4x1:m4|            ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m4                                      ; MUX_4x1         ; work         ;
 ;       |MUX_2x1:m3|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m4|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
 ;    |MUX_4x1:m5|            ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m5                                      ; MUX_4x1         ; work         ;
@@ -231,33 +232,33 @@ refer to the applicable agreement for further details.
 ;       |MUX_2x1:m3|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m7|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
 ;    |MUX_4x1:m8|            ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m8                                      ; MUX_4x1         ; work         ;
 ;       |MUX_2x1:m3|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|MUX_4x1:m8|MUX_2x1:m3                           ; MUX_2x1         ; work         ;
-;    |adder_8bit:add|        ; 8 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add                                  ; adder_8bit      ; work         ;
+;    |adder_8bit:add|        ; 9 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add                                  ; adder_8bit      ; work         ;
 ;       |full_adder:f2|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f2                    ; full_adder      ; work         ;
 ;       |full_adder:f3|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f3                    ; full_adder      ; work         ;
-;       |full_adder:f4|      ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f4                    ; full_adder      ; work         ;
-;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f4|half_adder:h2      ; half_adder      ; work         ;
-;       |full_adder:f5|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f5                    ; full_adder      ; work         ;
+;       |full_adder:f4|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f4                    ; full_adder      ; work         ;
+;       |full_adder:f5|      ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f5                    ; full_adder      ; work         ;
+;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f5|half_adder:h2      ; half_adder      ; work         ;
 ;       |full_adder:f6|      ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f6                    ; full_adder      ; work         ;
 ;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f6|half_adder:h2      ; half_adder      ; work         ;
+;       |full_adder:f7|      ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f7                    ; full_adder      ; work         ;
+;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f7|half_adder:h2      ; half_adder      ; work         ;
 ;       |full_adder:f8|      ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f8                    ; full_adder      ; work         ;
 ;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|adder_8bit:add|full_adder:f8|half_adder:h2      ; half_adder      ; work         ;
-;    |bitwise_xor:btxor|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|bitwise_xor:btxor                               ; bitwise_xor     ; work         ;
-;    |subtractor_8bit:sub|   ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub                             ; subtractor_8bit ; work         ;
+;    |subtractor_8bit:sub|   ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub                             ; subtractor_8bit ; work         ;
 ;       |full_adder:f2|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f2               ; full_adder      ; work         ;
 ;       |full_adder:f3|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f3               ; full_adder      ; work         ;
-;       |full_adder:f4|      ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f4               ; full_adder      ; work         ;
-;          |half_adder:h1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f4|half_adder:h1 ; half_adder      ; work         ;
-;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f4|half_adder:h2 ; half_adder      ; work         ;
+;       |full_adder:f4|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f4               ; full_adder      ; work         ;
 ;       |full_adder:f5|      ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f5               ; full_adder      ; work         ;
 ;          |half_adder:h1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f5|half_adder:h1 ; half_adder      ; work         ;
 ;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f5|half_adder:h2 ; half_adder      ; work         ;
-;       |full_adder:f6|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f6               ; full_adder      ; work         ;
+;       |full_adder:f6|      ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f6               ; full_adder      ; work         ;
 ;          |half_adder:h1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f6|half_adder:h1 ; half_adder      ; work         ;
 ;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f6|half_adder:h2 ; half_adder      ; work         ;
-;       |full_adder:f7|      ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f7               ; full_adder      ; work         ;
+;       |full_adder:f7|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f7               ; full_adder      ; work         ;
 ;          |half_adder:h1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f7|half_adder:h1 ; half_adder      ; work         ;
-;          |half_adder:h2|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f7|half_adder:h2 ; half_adder      ; work         ;
-;       |full_adder:f8|      ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f8               ; full_adder      ; work         ;
+;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f7|half_adder:h2 ; half_adder      ; work         ;
+;       |full_adder:f8|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f8               ; full_adder      ; work         ;
+;          |half_adder:h1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f8|half_adder:h1 ; half_adder      ; work         ;
 ;          |half_adder:h2|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU_8bit|subtractor_8bit:sub|full_adder:f8|half_adder:h2 ; half_adder      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -283,8 +284,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ALU_8bit|MUX_4x1:m2|MUX_2x1:m3|o ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ALU_8bit|MUX_4x1:m2|MUX_2x1:m3|o ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU_8bit|MUX_4x1:m5|MUX_2x1:m3|o ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+
+
++----------------------------------------+
+; Port Connectivity Checks: "MUX_4x1:cb" ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; c    ; Input ; Info     ; Stuck at GND ;
+; d    ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
 
 
 +---------------------------------------------------------------+
@@ -296,15 +308,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+-------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "subtractor_8bit:sub"                                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; borrow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +----------------------------------------------------------+
 ; Port Connectivity Checks: "adder_8bit:add|full_adder:f1" ;
 +------+-------+----------+--------------------------------+
@@ -314,29 +317,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+--------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder_8bit:add"                                                                      ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 26                          ;
-; cycloneiii_lcell_comb ; 40                          ;
-;     normal            ; 40                          ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 26                          ;
+; boundary_port         ; 27                          ;
+; cycloneiii_lcell_comb ; 41                          ;
+;     normal            ; 41                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 27                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 5.50                        ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 6.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -355,44 +349,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Aug 06 00:27:45 2024
+    Info: Processing started: Thu Aug 08 23:37:45 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_8bit -c ALU_8bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 9 design units, including 9 entities, in source file alu_8bit.v
-    Info (12023): Found entity 1: ALU_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 3
-    Info (12023): Found entity 2: adder_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 32
-    Info (12023): Found entity 3: subtractor_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 52
-    Info (12023): Found entity 4: bitwise_xor File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 83
-    Info (12023): Found entity 5: left_shift File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 101
-    Info (12023): Found entity 6: MUX_2x1 File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 119
-    Info (12023): Found entity 7: MUX_4x1 File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 133
-    Info (12023): Found entity 8: half_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 147
-    Info (12023): Found entity 9: full_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 158
+    Info (12023): Found entity 1: ALU_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 3
+    Info (12023): Found entity 2: adder_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 35
+    Info (12023): Found entity 3: subtractor_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 55
+    Info (12023): Found entity 4: bitwise_xor File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 86
+    Info (12023): Found entity 5: left_shift File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 104
+    Info (12023): Found entity 6: MUX_2x1 File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 122
+    Info (12023): Found entity 7: MUX_4x1 File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 136
+    Info (12023): Found entity 8: half_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 150
+    Info (12023): Found entity 9: full_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 161
 Info (12021): Found 1 design units, including 1 entities, in source file alu_8bit_tb.v
-    Info (12023): Found entity 1: ALU_8bit_tb File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit_tb.v Line: 3
+    Info (12023): Found entity 1: ALU_8bit_tb File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit_tb.v Line: 3
 Info (12127): Elaborating entity "ALU_8bit" for the top level hierarchy
-Info (12128): Elaborating entity "adder_8bit" for hierarchy "adder_8bit:add" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 12
-Info (12128): Elaborating entity "full_adder" for hierarchy "adder_8bit:add|full_adder:f1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 38
-Info (12128): Elaborating entity "half_adder" for hierarchy "adder_8bit:add|full_adder:f1|half_adder:h1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 163
-Info (12128): Elaborating entity "subtractor_8bit" for hierarchy "subtractor_8bit:sub" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 13
-Info (12128): Elaborating entity "bitwise_xor" for hierarchy "bitwise_xor:btxor" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 14
-Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:ls" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 15
-Info (12128): Elaborating entity "MUX_4x1" for hierarchy "MUX_4x1:m1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 18
-Info (12128): Elaborating entity "MUX_2x1" for hierarchy "MUX_4x1:m1|MUX_2x1:m1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit ALU/ALU_8bit.v Line: 139
-Info (13014): Ignored 7 buffer(s)
-    Info (13019): Ignored 7 SOFT buffer(s)
+Info (12128): Elaborating entity "adder_8bit" for hierarchy "adder_8bit:add" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 13
+Info (12128): Elaborating entity "full_adder" for hierarchy "adder_8bit:add|full_adder:f1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 41
+Info (12128): Elaborating entity "half_adder" for hierarchy "adder_8bit:add|full_adder:f1|half_adder:h1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 166
+Info (12128): Elaborating entity "subtractor_8bit" for hierarchy "subtractor_8bit:sub" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 14
+Info (12128): Elaborating entity "bitwise_xor" for hierarchy "bitwise_xor:btxor" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 15
+Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:ls" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 16
+Info (12128): Elaborating entity "MUX_4x1" for hierarchy "MUX_4x1:m1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 19
+Info (12128): Elaborating entity "MUX_2x1" for hierarchy "MUX_4x1:m1|MUX_2x1:m1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit ALU/ALU_8bit.v Line: 142
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 40 logic cells
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 41 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Tue Aug 06 00:27:53 2024
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Thu Aug 08 23:37:54 2024
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:06
 
 

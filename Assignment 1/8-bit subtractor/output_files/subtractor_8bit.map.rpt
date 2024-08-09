@@ -1,5 +1,5 @@
 Analysis & Synthesis report for subtractor_8bit
-Sun Aug 04 11:13:12 2024
+Thu Aug 08 19:50:29 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 04 11:13:12 2024       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 08 19:50:29 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; subtractor_8bit                             ;
 ; Top-level Entity Name              ; subtractor_8bit                             ;
@@ -164,13 +164,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; subtractor_8bit.v                ; yes             ; User Verilog HDL File  ; C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit subtractor/subtractor_8bit.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                               ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; subtractor_8bit.v                ; yes             ; User Verilog HDL File  ; C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -278,7 +278,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -288,19 +288,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Aug 04 11:13:03 2024
+    Info: Processing started: Thu Aug 08 19:50:14 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off subtractor_8bit -c subtractor_8bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file subtractor_8bit_tb.v
-    Info (12023): Found entity 1: subtractor_8bit_tb File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit subtractor/subtractor_8bit_tb.v Line: 3
+    Info (12023): Found entity 1: subtractor_8bit_tb File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit_tb.v Line: 3
 Info (12021): Found 3 design units, including 3 entities, in source file subtractor_8bit.v
-    Info (12023): Found entity 1: subtractor_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 3
-    Info (12023): Found entity 2: half_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 34
-    Info (12023): Found entity 3: full_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 44
+    Info (12023): Found entity 1: subtractor_8bit File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 3
+    Info (12023): Found entity 2: half_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 34
+    Info (12023): Found entity 3: full_adder File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 44
 Info (12127): Elaborating entity "subtractor_8bit" for the top level hierarchy
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:f1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 20
-Info (12128): Elaborating entity "half_adder" for hierarchy "full_adder:f1|half_adder:h1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 49
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:f1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 20
+Info (12128): Elaborating entity "half_adder" for hierarchy "full_adder:f1|half_adder:h1" File: C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -309,9 +309,9 @@ Info (21057): Implemented 40 device resources after synthesis - the final resour
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 15 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Sun Aug 04 11:13:12 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4779 megabytes
+    Info: Processing ended: Thu Aug 08 19:50:29 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:11
 
 
