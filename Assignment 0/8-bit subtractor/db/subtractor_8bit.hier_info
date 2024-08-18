@@ -1,0 +1,236 @@
+|subtractor_8bit
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => w[0].IN1
+b[1] => w[1].IN1
+b[2] => w[2].IN1
+b[3] => w[3].IN1
+b[4] => w[4].IN1
+b[5] => w[5].IN1
+b[6] => w[6].IN1
+b[7] => w[7].IN1
+dif[0] << full_adder:f1.port3
+dif[1] << full_adder:f2.port3
+dif[2] << full_adder:f3.port3
+dif[3] << full_adder:f4.port3
+dif[4] << full_adder:f5.port3
+dif[5] << full_adder:f6.port3
+dif[6] << full_adder:f7.port3
+dif[7] << full_adder:f8.port3
+borrow << full_adder:f8.port4
+
+
+|subtractor_8bit|full_adder:f1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f1|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f1|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f2|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f2|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f3|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f3|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f4
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f4|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f4|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f5
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f5|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f5|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f6
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f6|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f6|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f7
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f7|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f7|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f8
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:h2.port2
+carry <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f8|half_adder:h1
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bit|full_adder:f8|half_adder:h2
+a => x1.IN0
+a => a1.IN0
+b => x1.IN1
+b => a1.IN1
+sum <= x1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= a1.DB_MAX_OUTPUT_PORT_TYPE
+
+

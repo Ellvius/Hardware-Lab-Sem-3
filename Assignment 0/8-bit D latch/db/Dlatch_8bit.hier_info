@@ -1,0 +1,101 @@
+|Dlatch_8bit
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+enable => enable.IN8
+reset => reset.IN8
+result[0] << D_latch:dl1.port3
+result[1] << D_latch:dl2.port3
+result[2] << D_latch:dl3.port3
+result[3] << D_latch:dl4.port3
+result[4] << D_latch:dl5.port3
+result[5] << D_latch:dl6.port3
+result[6] << D_latch:dl7.port3
+result[7] << D_latch:dl8.port3
+
+
+|Dlatch_8bit|D_latch:dl1
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Dlatch_8bit|D_latch:dl2
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Dlatch_8bit|D_latch:dl3
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Dlatch_8bit|D_latch:dl4
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Dlatch_8bit|D_latch:dl5
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Dlatch_8bit|D_latch:dl6
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Dlatch_8bit|D_latch:dl7
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Dlatch_8bit|D_latch:dl8
+d => a1.IN0
+d => a2.IN0
+enable => a1.IN1
+enable => a2.IN1
+rst => a3.IN1
+rst => or1.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+
+

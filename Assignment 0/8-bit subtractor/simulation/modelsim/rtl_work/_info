@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/simulation/modelsim
+vfull_adder
+Z1 !s110 1723126845
+!i10b 1
+!s100 A9IboH12nOfYe88z:IYeW1
+IlMY4OW0ZR=KngBFcX:iaY1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1722750139
+Z4 8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v
+Z5 FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v
+L0 44
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1723126845.000000
+Z8 !s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work {+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor}
+Z12 tCvgOpt 0
+vhalf_adder
+R1
+!i10b 1
+!s100 Qo]bWH=ZDWQ_V_[8XH9N81
+I<J>NLG2ae`NmU?S6fLShh3
+R2
+R0
+R3
+R4
+R5
+L0 34
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vsubtractor_8bit
+R1
+!i10b 1
+!s100 1ihb=f@^n?UAFIc@@EC]c1
+IkIDOKGQa9n[N>CL0k`RPP2
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vsubtractor_8bit_tb
+!s110 1723126846
+!i10b 1
+!s100 T9NOKSAej2_Tm2PnmDPEj2
+IDNoeI]Kfn]D7NdE5KcCjb0
+R2
+R0
+w1723126813
+8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit_tb.v
+FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1723126846.000000
+!s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/8-bit subtractor/subtractor_8bit_tb.v|
+!i113 1
+R10
+R11
+R12
