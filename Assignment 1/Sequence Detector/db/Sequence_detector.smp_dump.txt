@@ -1,0 +1,8 @@
+
+State Machine - |Sequence_detector|current_state
+Name current_state.STATE3 current_state.STATE2 current_state.STATE1 current_state.IDLE current_state.STATE4 
+current_state.IDLE 0 0 0 0 0 
+current_state.STATE1 0 0 1 1 0 
+current_state.STATE2 0 1 0 1 0 
+current_state.STATE3 1 0 0 1 0 
+current_state.STATE4 0 0 0 1 1 
