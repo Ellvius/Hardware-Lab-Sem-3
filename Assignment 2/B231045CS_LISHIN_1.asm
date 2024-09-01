@@ -1,40 +1,49 @@
-.globl main
-.data
-msg1: .asciiz "Enter a positive number: "
-msg2: .asciiz "\nThe entered number is : odd"
-msg3: .asciiz "\nThe entered number is : even"
+.globl main  #declare main as global entry point
 
+.data			# Section for declaring initialized data
+	two: .word 2
+	msg1: .asciiz "Enter a positive number: "
+	msg2: .asciiz "\nThe entered number is : odd"
+	msg3: .asciiz "\nThe entered number is : even"
+	
 .text
 main:
-li $v0,4
-la $a0,msg1
-syscall
+	# print the first message
+	li $v0,4
+	la $a0,msg1
+	syscall
+	
+	# read the positive number
+	li $v0,5
+	syscall
+	move $t1,$v0
 
-li $v0,5
-syscall
-move $t1,$v0
+	# find remainder when divided by two
+	lw $t2,two
+	div $t1,$t2
+	mfhi $t3
 
-addi $t2,$zero,2
-
-div $t1,$t2
-mfhi $t3
-
-beq $t3,$zero,even
-bne $t3,$zero,odd
+	# check if the remainder is equal to zero(even) or not(odd)
+	beq $t3,$zero,even
+	bne $t3,$zero,odd
 
 even: 
+	# print the even number message 
 	li $v0,4
 	la $a0,msg3
 	syscall
 	
+	# Exit the program
 	li $v0,10
 	syscall
 	
 odd: 
+	# print the odd number message 
 	li $v0,4
 	la $a0,msg2
 	syscall
 
+	# Exit the program
 	li $v0,10
 	syscall
 
