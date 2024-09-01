@@ -1,0 +1,17 @@
+|Vending_machine
+clk => current_state~1.DATAIN
+rst => current_state~3.DATAIN
+denomination => total.OUTPUTSELECT
+denomination => total.OUTPUTSELECT
+denomination => total.OUTPUTSELECT
+denomination => total.OUTPUTSELECT
+denomination => total.OUTPUTSELECT
+denomination => Selector4.IN3
+denomination => Selector7.IN3
+denomination => Selector3.IN3
+denomination => Selector5.IN1
+denomination => Selector8.IN1
+water_dispensed <= water_dispensed.DB_MAX_OUTPUT_PORT_TYPE
+change <= change.DB_MAX_OUTPUT_PORT_TYPE
+
+

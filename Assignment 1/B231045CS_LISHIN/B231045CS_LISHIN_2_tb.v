@@ -1,11 +1,12 @@
+`timescale 1ns / 1ps
 
 module Vending_machine_tb;
         reg clk;
     reg rst;
-    reg denomination;
+    reg [3:0] denomination;
     
     wire water_dispensed;
-    wire change;
+    wire [3:0] change;
     
     // Instantiate the Vending Machine module
     Vending_machine uut (
@@ -32,34 +33,35 @@ module Vending_machine_tb;
         rst = 0;
         #10;
         
-        denomination = 1; #10;
-        denomination = 1; #10;
-        denomination = 1; #10;
+        denomination = 5; #10;
+        denomination = 5; #10;
+        denomination = 5; #10;
         denomination = 0; #10; 
         
         #30;
         
-        denomination = 0; #10;
-        denomination = 0; #10;
+        denomination = 10; #10;
+        denomination = 10; #10;
         denomination = 0; #10; 
         
         #30;
         
-        denomination = 1; #10;
-        denomination = 0; #10;
+        denomination = 5; #10;
+        denomination = 10; #10;
         denomination = 0; #10; 
         
         #30;
         
-        denomination = 0; #10;
-        denomination = 1; #10;
+        denomination = 10; #10;
+        denomination = 5; #10;
         denomination = 0; #10; 
         
         #30;
         
-        denomination = 1; #10;
-        denomination = 1; #10;
-        denomination = 0; #10;
+        denomination = 5; #10;
+        denomination = 5; #10;
+        denomination = 10; #10;
+        denomination = 0; #10; 
         
         #30;
         

@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/simulation/modelsim
+vVending_machine
+Z1 !s110 1725193015
+!i10b 1
+!s100 QBNY?h3F2zC3cn0P`G3U93
+IH`k^P_]kglFfe:N>;RmVf3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1725192967
+8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine.v
+FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1725193015.000000
+!s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine}
+Z7 tCvgOpt 0
+n@vending_machine
+vVending_machine_tb
+R1
+!i10b 1
+!s100 E3gkbIWf`AI5lDjFj0cak2
+I@SScoQLJSo=ie[FB5TiQ<1
+R2
+R0
+w1725192764
+8C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine_tb.v
+FC:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine|C:/Users/lishi/Desktop/Semester 3/Hardware Laboratory/Assignment Solutions/Assignment 1/Vending Machine/Vending_machine_tb.v|
+!i113 1
+R5
+R6
+R7
+n@vending_machine_tb

@@ -1,0 +1,7 @@
+
+State Machine - |Vending_machine|current_state
+Name current_state.RETURNING_CHANGE current_state.DISPENSING_WATER current_state.ACCEPTING_COINS current_state.IDLE 
+current_state.IDLE 0 0 0 0 
+current_state.ACCEPTING_COINS 0 0 1 1 
+current_state.DISPENSING_WATER 0 1 0 1 
+current_state.RETURNING_CHANGE 1 0 0 1 
