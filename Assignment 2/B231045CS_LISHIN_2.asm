@@ -22,10 +22,10 @@ main:
 
 fact:	
 	# factorial loop 
-	beq $t0,$zero,exit			# exit if the number becomes equal to 0
-	mul $t1,$t1,$t0			# multiply the result with earlier value of result 
-	sub $t0,$t0,1				# reduce the number by 1
-	j fact					# jump back to the loop
+	beq $t0,$zero,exit		
+	mul $t1,$t1,$t0			
+	sub $t0,$t0,1				
+	j fact					
 	
 exit:
 	# print the factorial message

@@ -3,8 +3,8 @@
 .data			# Section for declaring initialized data
 	two: .word 2
 	msg1: .asciiz "Enter a positive number: "
-	msg2: .asciiz "\nThe entered number is : odd"
-	msg3: .asciiz "\nThe entered number is : even"
+	msg2: .asciiz "The entered number is : odd"
+	msg3: .asciiz "The entered number is : even"
 	
 .text
 main:
