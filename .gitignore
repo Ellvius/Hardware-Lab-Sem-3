@@ -1,2 +1,16 @@
 # Exclude zip files
 *.zip
+
+# Exclude backup, report, and project files
+*.bak
+*.rpt
+*.qws
+*.qpf
+*.qsf
+
+
+# Exclude directories
+db/
+incremental_db/
+output_files/
+simulation/
